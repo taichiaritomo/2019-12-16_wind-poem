@@ -1,0 +1,58 @@
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background: #ccc;
+	background: #526b2d; */
+	/* background: #416c00; */
+	/* background: #006300; */
+	font-family: 'NanumMyeongjo', serif;
+}
+
+main {
+	margin: 50px auto;
+	font-size: 3vw;
+	height: 3em;
+	text-align: center;
+	color: white;
+}
+
+.leaf {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	/* background: #416c00; */
+	background: #31B600;
+	/* background: #006300; */
+	border-radius: 100% 0;
+}
+
+/* main > span:nth-child(1) {
+	display: inline-block;
+	transform: translate(1.33em, 0);
+}
+
+main > span:nth-child(2) {
+	display: inline-block;
+	transform: translate(-1.33em, 1em);
+} */
+
+main > span > span {
+	transition: letter-spacing 0.1s linear;
+}
+
+@media print {
+	main {
+		margin: 0 auto;
+	}
+}
